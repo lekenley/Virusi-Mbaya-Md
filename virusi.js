@@ -7,7 +7,7 @@ const start = async () => {
     await bot.init()
     //bot.logger.info('⏳ Database Syncing!')
     await bot.DATABASE.sync()
-    await bot.connect()
+    await bot.connect(.)
   } catch (error) {
     Debug.error(error);
     start();
